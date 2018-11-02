@@ -168,3 +168,17 @@ $navigation-height-smaller: 4rem;
         }
     }
 }
+
+.breadcrumb {
+    list-style: none;
+    margin-bottom: 1rem;
+    padding: .75rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    .breadcrumb-item {
+        &.active {
+            color: $color-font-lighten;
+        }
+    }
+}

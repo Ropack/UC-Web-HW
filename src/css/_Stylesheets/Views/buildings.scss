@@ -1,3 +1,60 @@
-.building-item {
+@import "../Base/_global.scss";
 
+.buildings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    .building-item {
+        width: 30%;
+        position: relative;
+        margin-bottom: 3.5rem;
+
+        .building-img {
+            img {
+                width: 100%;
+                -webkit-transition: 0.3s,filter;
+                -moz-transition: 0.3s,filter;
+                transition: 0.3s,filter;
+                -webkit-transition: 0.3s -webkit-filter linear;
+                opacity: 1;
+            }
+
+            &:after {
+                content: "";
+                display: block;
+                background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, black 100%);
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+            }
+        }
+
+        &:hover {
+            img {
+                filter: brightness(110%) contrast(110%);
+                opacity: 0.9;
+            }
+        }
+        /*&.building-img-1 {
+            background-image: url("../img/building1.jpg");
+        }
+
+        &.building-img-2 {
+            background-image: url("../img/building2.jpg");
+        }*/
+        .description {
+            position: absolute;
+            bottom: 2rem;
+            color: $color-white;
+            padding-left: 2rem;
+
+            p, h3 {
+            }
+        }
+    }
 }
