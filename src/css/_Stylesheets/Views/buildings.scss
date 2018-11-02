@@ -1,14 +1,33 @@
 @import "../Base/_global.scss";
 
+.main-title {
+    
+    color: $color-primary;
+    
+    margin: 0;
+}
+
+.main-button {
+    
+}
+
+
+.section-home {
+    background: $color-section-bg;
+    text-align: center;
+    height: 29.8rem;
+    padding: 10rem 0;
+}
+
 .buildings {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding: 0;
 
     .building-item {
-        width: 30%;
+        width: 33.3333%;
         position: relative;
-        margin-bottom: 3.5rem;
 
         .building-img {
             img {
@@ -40,13 +59,7 @@
                 opacity: 0.9;
             }
         }
-        /*&.building-img-1 {
-            background-image: url("../img/building1.jpg");
-        }
 
-        &.building-img-2 {
-            background-image: url("../img/building2.jpg");
-        }*/
         .description {
             position: absolute;
             bottom: 2rem;

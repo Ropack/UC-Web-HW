@@ -1,0 +1,10 @@
+@import "../Base/_global.scss";
+
+.rooms {
+    th, td {
+        width: 33.33%;
+    }
+    td>a {
+        float: right;
+    }
+}
