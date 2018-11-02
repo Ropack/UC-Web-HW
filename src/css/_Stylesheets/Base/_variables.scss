@@ -1,0 +1,60 @@
+﻿//colors
+$color-white: #fff;
+$color-black: #000;
+$color-transparent: rgba(255, 255, 255, 0);
+$color-primary: #4A90E2;
+$color-secondary: #2E5b90;
+$color-background: lighten($color-secondary, 40%);
+$color-bg-grid: lighten($color-primary, 35%);
+$color-error: #d91313;
+$color-border: #f2f2f2;
+$color-bg: #ECECEC;
+$color-section-bg: #f7fafe;
+$color-font: $color-black;
+$color-font-lighten: #8c8c8c;
+$color-rating: #ffc707;
+$color-word: #295499;
+$color-excel: #207647;
+$color-power-point: #EA3C00;
+$color-audio: #00CC00;
+$color-image: #FFCC00;
+$color-video: #FF3300;
+$color-onedrive: #0067b8;
+$color-file-icon: #000;
+$color-bg-disabled: #d6d6d6;
+$color-font-disabled: #969696;
+
+// Font family
+$font-text: 'Open Sans', sans-serif;
+$font-title: 'Roboto', sans-serif;
+$font-regular: 'Roboto', sans-serif;
+$font-awesome: 'font-awesome';
+
+// Font sizes
+$font-size-xs: 1rem;
+$font-size-s: 1.3rem;
+$font-size-base: 1.6rem;
+$font-size-m: 2.2rem;
+$font-size-l: 3.2rem;
+$font-size-xl: 4.5rem;
+$font-size-xxl: 6.4rem;
+
+// Helpfull variables
+$width-container: 1270px;
+$outline-width: .1rem;
+$border-width: .2rem;
+$base-border: $border-width solid $color-white;
+$transition-time: .3s;
+$transition-time-short: .15s;
+$animate-all: all $transition-time;
+$animate-all-fast: all $transition-time-short;
+$border-radius: .2rem;
+$header-padding: .5rem 1rem;
+$letter-spacing: .1rem;
+
+// All devices width for responsivity
+$width-mobile: 480px;
+$width-tablet: 768px;
+$width-desktop: 980px;
+$width-desktop-large: 1200px;
+$width-desktop-HD: 1440px;

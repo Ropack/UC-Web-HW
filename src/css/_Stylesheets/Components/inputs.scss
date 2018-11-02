@@ -1,0 +1,163 @@
+﻿@import "../Base/_global.scss";
+
+.dotvvm-bp-text-box {
+    display: inline-block;
+    width: 100%;
+    height: 6rem;
+    line-height: 6rem;
+    margin-bottom: 2rem;
+    padding: .5rem 2rem;
+    border-radius: $border-radius;
+    box-sizing: border-box;
+    border-color: $color-border;
+    border-width: 1px;
+    font-size: $font-size-base;
+    letter-spacing: $letter-spacing;
+
+    &.dotvvm-bp-state_error:not(.dotvvm-bp-state_disabled) {
+        box-shadow: none;
+    }
+
+    &.dotvvm-bp-state_focused {
+        border-color: $color-primary;
+        box-shadow: 0 0 0 1px $color-primary;
+    }
+
+    &.dotvvm-bp-state_error:not(.dotvvm-bp-state_disabled) {
+        color: $color-black;
+        z-index: unset;
+        box-shadow: none;
+    }
+}
+
+.has-error {
+    .dotvvm-bp-text-box {
+        border-color: $color-error;
+    }
+}
+
+label {
+    display: block;
+    width: 100%;
+    line-height: 2.4rem;
+    margin-bottom: .5rem;
+    letter-spacing: $letter-spacing;
+}
+
+textarea.dotvvm-bp-text-box {
+    min-height: 30rem;
+    line-height: 2.2rem;
+    width: 100%;
+    resize: vertical;
+}
+
+.admin {
+    .dotvvm-bp-text-box {
+        height: 3rem;
+        line-height: 3rem;
+        margin-bottom: 0;
+        padding: .5rem 1rem;
+        font-size: 1.4rem;
+    }
+
+    textarea.dotvvm-bp-text-box {
+        height: 12rem;
+        line-height: 2.2rem;
+    }
+
+    label {
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        margin-bottom: .5rem;
+
+        &.title {
+            margin-bottom: 1.3rem;
+        }
+    }
+}
+
+
+.dotvvm-bp-check-box {
+    display: inline-block;
+    width: auto;
+    margin-right: 5rem;
+
+    svg {
+        vertical-align: top;
+        margin-right: .6rem;
+    }
+}
+
+.input-with-button {
+    display: flex;
+
+    div:first-of-type {
+        flex: 1 1 auto;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    > input[type=button] {
+        flex: 0 0 auto;
+        background: $color-border;
+        color: $color-primary;
+        height: 3rem;
+        line-height: 2.2rem;
+        border-color: $color-border;
+        border-radius: 0 $border-radius $border-radius 0;
+        font-weight: 400;
+
+        &.dotvvm-bp-state_disabled {
+            color: $color-font-disabled;
+            background-color: $color-bg-disabled;
+            border-color: $color-bg-disabled;
+            cursor: not-allowed;
+        }
+
+        &:not(.dotvvm-bp-state_disabled):hover {
+            background: darken($color-border, 15%);
+            border-color: darken($color-border, 15%);
+        }
+    }
+}
+
+.input-button-row {
+    display: flex;
+    align-items: center;
+
+    .dotvvm-bp-text-box {
+        flex: 1 1 auto;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        margin-right: 1rem;
+    }
+
+    .button {
+        flex: 0 0 auto;
+        background: $color-primary;
+        color: $color-white;
+        height: 3rem;
+        line-height: 3rem;
+        border-color: $color-border;
+        border-radius: $border-radius;
+        font-weight: 400;
+
+        &:not(.dotvvm-bp-state_disabled):hover {
+            background: darken($color-primary, 15%);
+            border-color: darken($color-primary, 15%);
+        }
+    }
+}
+
+.form-c {
+    > label {
+        margin-bottom: 1.3rem;
+
+        span.has-error {
+            display: block;
+            margin-top: .5rem;
+            color: $color-error;
+        }
+    }
+}
+
