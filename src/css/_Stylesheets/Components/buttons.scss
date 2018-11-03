@@ -9,9 +9,9 @@
     border: 1px solid $color-primary;
     cursor: pointer;
     font-weight: 600;
-    -webkit-transition: background-color 0.3s linear;
-    -moz-transition: background-color 0.3s linear;
-    transition: background-color 0.3s linear;
+    -webkit-transition: background-color $transition-time linear;
+    -moz-transition: background-color $transition-time linear;
+    transition: background-color $transition-time linear;
 
     &:hover {
         text-decoration: none;
@@ -27,21 +27,4 @@
             color: $color-white;
         }
     }
-
-    &.button-text {
-        border: none;
-        background-color: transparent;
-        text-transform: uppercase;
-        font-weight: 600;
-        color: $color-primary;
-
-        &:hover {
-            background-color: transparent;
-            color: $color-secondary;
-        }
-    }
-}
-
-.button-hidden {
-    display: none;
 }

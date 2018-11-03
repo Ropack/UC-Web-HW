@@ -5,9 +5,7 @@ $color-transparent: rgba(255, 255, 255, 0);
 $color-primary: #4A90E2;
 $color-secondary: #2E5b90;
 $color-background: #f4f4f4;
-$color-bg-grid: lighten($color-primary, 35%);
-$color-error: #d91313;
-$color-border: #f2f2f2;
+$color-border: #dee2e6;
 $color-bg: #ECECEC;
 $color-section-bg: #f7fafe;
 $color-font: $color-black;
@@ -31,17 +29,9 @@ $font-size-xl: 4.5rem;
 $font-size-xxl: 6.4rem;
 
 // Helpfull variables
-$width-container: 1270px;
-$outline-width: .1rem;
-$border-width: .2rem;
-$base-border: $border-width solid $color-white;
 $transition-time: .3s;
-$transition-time-short: .15s;
-$animate-all: all $transition-time;
-$animate-all-fast: all $transition-time-short;
-$border-radius: .2rem;
-$header-padding: .5rem 1rem;
 $letter-spacing: .1rem;
+$navigation-height: 5rem;
 
 // All devices width for responsivity
 $width-mobile: 480px;

@@ -1,34 +1,124 @@
 ﻿<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="author" content="Radek Rous" />
+    <meta name="description" content="Room Reservation Services" />
     <title>Meeting Center</title>
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/style.min.css" rel="stylesheet" />
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" as="script">
 </head>
 <body>
-<header>
-    <nav class="navigation-on-top">
-        <ul class="menu">
-            <li><a href="index.html">Meeting Center</a></li>
-            <li><a href="./contact.html">Kontakt</a></li>
-        </ul>
-    </nav>
-    <div class="container">
-        <nav>
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Meeting Center</a></li>
-                <li class="breadcrumb-item"><a href="rooms.html">PAR - Areál Parukářka</a></li>
-                <li class="breadcrumb-item active"><span>Rozvrh - 16. 10. 2018</span></li>
-            </ol>
+    <header>
+        <nav class="navigation-on-top">
+            <ul class="menu navigation-body">
+                <li><a href="index.html">Meeting Center</a></li>
+                <li><a href="./contact.html">Kontakt</a></li>
+            </ul>
+            <div class="nav-toggle-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
-    </div>
-</header>
-<main>
-    <div class="container">
-        <section>
-            <h1>Rozvrh - 16. 10. 2018</h1>
-            <p>Popis Popis Popis Popis Popis Popis </p>
-        </section>
-    </div>
-</main>
-<footer></footer>
+        <div class="container">
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Meeting Center</a></li>
+                    <li class="breadcrumb-item"><a href="rooms.html">PAR - Areál Parukářka</a></li>
+                    <li class="breadcrumb-item active"><span>Rozvrh - 16. 10. 2018</span></li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section>
+                <h1>Rozvrh - 16. 10. 2018</h1>
+                <h3>PAR - Areál Parukářka</h3>
+                <table class="today-timetable">
+                    <thead>
+                        <tr>
+                            <th>Čas</th>
+                            <th>Předmět</th>
+                            <th>Místnost</th>
+                            <th>Vyučující</th>
+                            <th>Průběh</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>11:00 - 12:30</td>
+                            <td>
+                                <p>WEB</p>
+                                <p>Webové technologie</p>
+                            </td>
+                            <td>PAR 1.1</td>
+                            <td>Tomáš Jukin</td>
+                            <td>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 50%"></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>11:00 - 12:30</td>
+                            <td>
+                                <p>MA1</p>
+                                <p>Matematika 1</p>
+                            </td>
+                            <td>PAR 1.2</td>
+                            <td>František Omáčka</td>
+                            <td>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 50%"></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>12:30 - 14:00</td>
+                            <td>
+                                <p>WEB</p>
+                                <p>Webové technologie</p>
+                            </td>
+                            <td>PAR 1.1</td>
+                            <td>Tomáš Jukin</td>
+                            <td>
+                                <div class="progress">
+                                    <div class="progress-bar"></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>14:00 - 15:30</td>
+                            <td>
+                                <p>MA1</p>
+                                <p>Matematika 1</p>
+                            </td>
+                            <td>PAR 1.3</td>
+                            <td>František Omáčka</td>
+                            <td>
+                                <div class="progress">
+                                    <div class="progress-bar"></div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p>Vytvořil Radek Rous</p>
+            <p>A takové ty další věci, které se píší do footeru</p>
+        </div>
+        <div>
+            <p>Tady je třeba můj <a href="https://github.com/Ropack/UC-Web-HW">Github</a></p>
+
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/app.min.js"></script>
 </body>
 </html>

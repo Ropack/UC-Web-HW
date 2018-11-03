@@ -15,6 +15,10 @@
             width: 30rem;
         }
 
+        @include res-max-tablet {
+            width: 100%;
+        }
+
         h4 {
             height: 4rem;
             line-height: 4rem;
@@ -31,16 +35,5 @@
     &-content {
         flex: 0 1 auto;
         width: 100%;
-    }
-
-    .show-aside-button {
-        display: none;
-        align-self: flex-end;
-
-        &.active {
-            svg {
-                transform: rotate(-180deg);
-            }
-        }
     }
 }

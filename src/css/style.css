@@ -43,10 +43,10 @@ body {
   overflow-x: hidden; }
   body header {
     flex: 0 0 auto;
-    padding-top: 5.2rem; }
+    padding-top: 5rem; }
     @media only screen and (max-width: 768px) {
       body header {
-        padding-top: 6.2rem; } }
+        padding-top: 5rem; } }
   body.admin header {
     padding-top: 5.1rem; }
   body main {
@@ -84,10 +84,6 @@ ul li {
   display: block; }
 
 span, p, strong, a, label {
-  font-size: 1.4rem;
-  line-height: 2rem; }
-
-.admin span, .admin p, .admin strong, .admin a, .admin label {
   font-size: 1.4rem;
   line-height: 2rem; }
 
@@ -150,15 +146,6 @@ h6 {
   line-height: 1;
   padding-right: 0.5rem; }
 
-h2.section-title {
-  text-align: center;
-  margin: 0;
-  margin-bottom: 4rem; }
-  @media only screen and (max-width: 480px) {
-    h2.section-title {
-      font-size: 2.2rem;
-      margin-bottom: 2rem; } }
-
 .fa-calendar-alt:before {
   content: '\f073'; }
 
@@ -210,7 +197,7 @@ h2.section-title {
     width: auto;
     max-width: auto;
     box-sizing: border-box; }
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 768px) {
     .aside-layout {
       -webkit-box-direction: normal;
       -webkit-box-orient: vertical;
@@ -231,6 +218,9 @@ h2.section-title {
       .aside-layout aside {
         flex: 0 0 30rem;
         width: 30rem; } }
+    @media only screen and (max-width: 768px) {
+      .aside-layout aside {
+        width: 100%; } }
     .aside-layout aside h4 {
       height: 4rem;
       line-height: 4rem;
@@ -239,16 +229,11 @@ h2.section-title {
       font-weight: 700;
       text-transform: uppercase;
       text-align: center;
-      border-bottom: 1px solid #f2f2f2;
+      border-bottom: 1px solid #dee2e6;
       margin-bottom: 2rem; }
   .aside-layout-content {
     flex: 0 1 auto;
     width: 100%; }
-  .aside-layout .show-aside-button {
-    display: none;
-    align-self: flex-end; }
-    .aside-layout .show-aside-button.active svg {
-      transform: rotate(-180deg); }
 
 .button {
   display: inline-block;
@@ -271,18 +256,6 @@ h2.section-title {
     .button.button-secondary:hover {
       background-color: #4A90E2;
       color: #fff; }
-  .button.button-text {
-    border: none;
-    background-color: transparent;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: #4A90E2; }
-    .button.button-text:hover {
-      background-color: transparent;
-      color: #2E5b90; }
-
-.button-hidden {
-  display: none; }
 
 .container {
   width: 70%;
@@ -309,143 +282,17 @@ h2.section-title {
         min-width: 100%;
         padding: 0 2rem; } }
 
-.dotvvm-bp-text-box {
-  display: inline-block;
-  width: 100%;
-  height: 6rem;
-  line-height: 6rem;
-  margin-bottom: 2rem;
-  padding: .5rem 2rem;
-  border-radius: 0.2rem;
-  box-sizing: border-box;
-  border-color: #f2f2f2;
-  border-width: 1px;
-  font-size: 1.6rem;
-  letter-spacing: 0.1rem; }
-  .dotvvm-bp-text-box.dotvvm-bp-state_error:not(.dotvvm-bp-state_disabled) {
-    box-shadow: none; }
-  .dotvvm-bp-text-box.dotvvm-bp-state_focused {
-    border-color: #4A90E2;
-    box-shadow: 0 0 0 1px #4A90E2; }
-  .dotvvm-bp-text-box.dotvvm-bp-state_error:not(.dotvvm-bp-state_disabled) {
-    color: #000;
-    z-index: unset;
-    box-shadow: none; }
-
-.has-error .dotvvm-bp-text-box {
-  border-color: #d91313; }
-
-label {
-  display: block;
-  width: 100%;
-  line-height: 2.4rem;
-  margin-bottom: .5rem;
-  letter-spacing: 0.1rem; }
-
-textarea.dotvvm-bp-text-box {
-  min-height: 30rem;
-  line-height: 2.2rem;
-  width: 100%;
-  resize: vertical; }
-
-.admin .dotvvm-bp-text-box {
-  height: 3rem;
-  line-height: 3rem;
-  margin-bottom: 0;
-  padding: .5rem 1rem;
-  font-size: 1.4rem; }
-
-.admin textarea.dotvvm-bp-text-box {
-  height: 12rem;
-  line-height: 2.2rem; }
-
-.admin label {
-  font-size: 1.4rem;
-  line-height: 1.6rem;
-  margin-bottom: .5rem; }
-  .admin label.title {
-    margin-bottom: 1.3rem; }
-
-.dotvvm-bp-check-box {
-  display: inline-block;
-  width: auto;
-  margin-right: 5rem; }
-  .dotvvm-bp-check-box svg {
-    vertical-align: top;
-    margin-right: .6rem; }
-
-.input-with-button {
-  display: flex; }
-  .input-with-button div:first-of-type {
-    flex: 1 1 auto;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0; }
-  .input-with-button > input[type=button] {
-    flex: 0 0 auto;
-    background: #f2f2f2;
-    color: #4A90E2;
-    height: 3rem;
-    line-height: 2.2rem;
-    border-color: #f2f2f2;
-    border-radius: 0 0.2rem 0.2rem 0;
-    font-weight: 400; }
-    .input-with-button > input[type=button].dotvvm-bp-state_disabled {
-      color: #969696;
-      background-color: #d6d6d6;
-      border-color: #d6d6d6;
-      cursor: not-allowed; }
-    .input-with-button > input[type=button]:not(.dotvvm-bp-state_disabled):hover {
-      background: #cccccc;
-      border-color: #cccccc; }
-
-.input-button-row {
-  display: flex;
-  align-items: center; }
-  .input-button-row .dotvvm-bp-text-box {
-    flex: 1 1 auto;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    margin-right: 1rem; }
-  .input-button-row .button {
-    flex: 0 0 auto;
-    background: #4A90E2;
-    color: #fff;
-    height: 3rem;
-    line-height: 3rem;
-    border-color: #f2f2f2;
-    border-radius: 0.2rem;
-    font-weight: 400; }
-    .input-button-row .button:not(.dotvvm-bp-state_disabled):hover {
-      background: #1f69c1;
-      border-color: #1f69c1; }
-
-.form-c > label {
-  margin-bottom: 1.3rem; }
-  .form-c > label span.has-error {
-    display: block;
-    margin-top: .5rem;
-    color: #d91313; }
-
 section {
   padding: 2rem 0 5rem 0; }
   @media only screen and (max-width: 980px) {
     section {
       padding: 3rem 0; } }
-  section .section-title {
-    font-size: 4.5rem;
-    padding: 0;
-    padding-bottom: 5rem;
-    text-align: center; }
-    @media only screen and (max-width: 980px) {
-      section .section-title {
-        font-size: 3.2rem;
-        padding-bottom: 3rem; } }
 
 table {
   border-collapse: collapse;
   width: 100%;
   max-width: 100%;
-  margin-bottom: 1rem;
+  margin: 2rem 0;
   background-color: transparent; }
   table th, table td {
     padding: .75rem;
@@ -456,6 +303,27 @@ table {
     border-bottom: 2px solid #dee2e6; }
   table tbody tr:nth-of-type(odd) {
     background-color: rgba(0, 0, 0, 0.05); }
+  table tbody td {
+    height: 5.5rem; }
+
+.progress {
+  display: flex;
+  height: 2rem;
+  overflow: hidden;
+  background-color: #e9ecef; }
+  .progress .progress-bar {
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    background-color: #4A90E2;
+    transition: width .6s ease; }
 
 .navigation-on-top {
   position: fixed;
@@ -473,7 +341,7 @@ table {
     .navigation-on-top {
       text-align: center;
       z-index: 10;
-      height: 4rem; } }
+      height: 5rem; } }
   .navigation-on-top.nav-open .nav-toggle-btn span:nth-child(1) {
     top: 0.7rem;
     width: 0%;
@@ -535,7 +403,8 @@ table {
     visibility: hidden;
     transition: all .25s ease-in-out;
     cursor: pointer;
-    top: 1.15rem; }
+    top: 1.65rem;
+    right: 1.5rem; }
     .navigation-on-top .nav-toggle-btn.nav-item-left, .navigation-on-top .nav-toggle-btn.nav-item-right {
       transform: translate(0, 0); }
     .navigation-on-top .nav-toggle-btn.nav-item-left {
@@ -597,6 +466,9 @@ table {
   text-align: center;
   height: 29.8rem;
   padding: 10rem 0; }
+  @media only screen and (max-width: 768px) {
+    .section-home {
+      height: 15rem; } }
 
 .buildings {
   display: flex;
@@ -606,12 +478,14 @@ table {
   .buildings .building-item {
     width: 33.3333%;
     position: relative; }
+    @media only screen and (max-width: 768px) {
+      .buildings .building-item {
+        width: 100%; } }
     .buildings .building-item .building-img img {
       width: 100%;
-      -webkit-transition: 0.3s,filter;
-      -moz-transition: 0.3s,filter;
-      transition: 0.3s,filter;
-      -webkit-transition: 0.3s -webkit-filter linear;
+      -webkit-transition: 0.3s, filter;
+      -moz-transition: 0.3s, filter;
+      transition: 0.3s, filter;
       opacity: 1; }
     .buildings .building-item .building-img:after {
       content: "";
@@ -636,10 +510,19 @@ table {
 .schedule tbody tr {
   height: 5rem; }
 
+.rooms table {
+  margin: 0 0 2rem 0; }
+
 .rooms th, .rooms td {
   width: 33.33%; }
 
 .rooms td > a {
   float: right; }
+
+.rooms h4 {
+  padding-left: 1rem; }
+
+.today-timetable td:last-child {
+  width: 30%; }
 
 /*# sourceMappingURL=style.css.map */

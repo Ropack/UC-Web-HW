@@ -1,8 +1,5 @@
 ﻿@import "../Base/_global.scss";
 
-$navigation-height: 5rem;
-$navigation-height-smaller: 4rem;
-
 .navigation-on-top {
     position: fixed;
     top: 0;
@@ -19,7 +16,7 @@ $navigation-height-smaller: 4rem;
     @include res-max-tablet {
         text-align: center;
         z-index: 10;
-        height: $navigation-height-smaller;
+        height: $navigation-height;
     }
 
     &.nav-open {
@@ -120,7 +117,8 @@ $navigation-height-smaller: 4rem;
         visibility: hidden;
         transition: all .25s ease-in-out;
         cursor: pointer;
-        top: (($navigation-height-smaller - 1.7rem) / 2 );
+        top: (($navigation-height - 1.7rem) / 2 );
+        right: 1.5rem;
 
         &.nav-item-left,
         &.nav-item-right {

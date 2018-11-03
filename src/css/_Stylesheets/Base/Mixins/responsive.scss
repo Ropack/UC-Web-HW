@@ -1,17 +1,5 @@
 ﻿@import "../_variables.scss";
 
-// IMPORTANT: Never include this file in other *.scss files 
-// Use @import: "mixins" 
-
-// Here are all Mixins for responsivity
-// I prefer to use only this ones:
-//    res-max-mobile --> for all mobile devices
-//    res-min-mobile-max-tablet --> for all tablet devices
-//    res-min-tablet-max-desktop-small --> for all small desktop devices
-//    res-min-desktop-max-desktop-large --> for all small desktop devices
-//    res-min-desktop-large --> for all large desktop devices
-// This will cover all devices
-
 // From 0px to - Max 
 @mixin res-max-mobile {
     @media only screen and (max-width: $width-mobile) {

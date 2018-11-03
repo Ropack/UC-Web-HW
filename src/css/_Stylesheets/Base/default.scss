@@ -46,10 +46,10 @@ body {
 
     header {
         flex: 0 0 auto;
-        padding-top: 5.2rem;
+        padding-top: $navigation-height;
 
         @include res-max-tablet {
-            padding-top: 6.2rem;
+            padding-top: $navigation-height;
         }
     }
 

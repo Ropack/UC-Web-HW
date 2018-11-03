@@ -7,19 +7,17 @@
     "browser-sync": "2.24.5",
     "clean-css-cli": "4.1.11",
     "node-sass": "4.9.2",
-    "typescript": "2.9.2",
     "uglify-js": "3.4.4",
     "watch": "1.0.2"
   },
   "scripts": {
     "bundle": "npm run bundle:css && npm run bundle:js",
-    "bundle:css": "npm run compile:scss && postcss css/style.css | cleancss -o css/style.min.css",
-    "bundle:js": "npm run compile:ts && uglifyjs -o js/app.min.js -c -m -- js/app.js",
+    "bundle:css": "npm run compile:scss && npm run cleancss",
+    "bundle:js": "uglifyjs -o js/app.min.js -c -m -- js/app.js",
+    "cleancss": "cleancss -o css/style.min.css css/style.css",
     "compile:scss": "node-sass --source-map=true css/_Stylesheets/style.scss css/style.css",
-    "compile:ts": "tsc -p Resources",
-    "watch": "npm run watch:scss | npm run watch:ts",
+    "watch": "npm run watch:scss",
     "watch:scss": "npm run compile:scss && npm run compile:scss -- -w",
-    "watch:ts": "npm run compile:ts -- -w",
     "browser-sync": "browser-sync start --proxy localhost:51130 --files=\"css/*.css\" \"js/*.js\""
   },
   "-vs-binding": {

@@ -113,7 +113,7 @@
         box-sizing: border-box;
     }
 
-    @include res-max-mobile {
+    @include res-max-tablet {
         -webkit-box-direction: normal;
         -webkit-box-orient: vertical;
         -webkit-flex-direction: column;
@@ -129,16 +129,4 @@
             }
         }
     }
-}
-
-// Flexbox Order
-// The 'order' property controls the order in which flex items appear within
-// their flex container, by assigning them to ordinal groups.
-
-@mixin flex-order-item($int) {
-    -webkit-box-ordinal-group: $int + 1;
-    -webkit-order: $int;
-    -moz-order: $int;
-    -ms-flex-order: $int;
-    order: $int;
 }
