@@ -394,6 +394,8 @@ table {
         border-bottom-color: #4A90E2; }
         .navigation-on-top .menu li:hover a {
           color: #14457f; }
+      .navigation-on-top .menu li.active {
+        border-bottom-color: #4A90E2; }
   .navigation-on-top .nav-toggle-btn {
     display: inline-block;
     position: absolute;
@@ -464,7 +466,7 @@ table {
 .section-home {
   background: #f7fafe;
   text-align: center;
-  height: 29.8rem;
+  height: 30rem;
   padding: 10rem 0; }
   @media only screen and (max-width: 768px) {
     .section-home {

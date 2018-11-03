@@ -105,6 +105,10 @@
                     color: darken($color-primary, 30%);
                 }
             }
+
+            &.active {
+                border-bottom-color: $color-primary;
+            }
         }
     }
 
