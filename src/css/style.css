@@ -152,6 +152,9 @@ h6 {
 .fa-clipboard-list:before {
   content: '\f46d'; }
 
+.fa-arrow-left:before {
+  content: '\f060'; }
+
 .aside-layout {
   width: 100%;
   display: -webkit-box;
@@ -526,5 +529,19 @@ table {
 
 .today-timetable td:last-child {
   width: 30%; }
+
+.section-contact {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .section-contact .image {
+    max-width: 70%; }
+    .section-contact .image img {
+      width: 100%; }
+  @media only screen and (max-width: 768px) {
+    .section-contact .image {
+      max-width: initial; }
+    .section-contact div {
+      width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
